@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+ :root {
+    --verydarkmagenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-rayishmagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 17px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    height: 100vh;
+    width: auto;
+    padding: 60px;
+    justify-content: center;
+}
+
+.footer .title {
+    text-align: center;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    padding: 0px 80px 25px 80px;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 15px 0px 15px 0px;
+}
+
+li {
+    display: inline;
+    padding-right: 6px;
+}
+
+.rating {
+    box-sizing: border-box;
+    display: block;
+    color: hsl(300, 43%, 22%);
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.rating .rating-box1,
+.rating .rating-box2,
+.rating .rating-box3 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 5px 20px 5px;
+    background-color: hsl(303, 10%, 53%, 0.5);
+    border-radius: 8px;
+}
+
+.reviews .review-box1,
+.reviews .review-box2,
+.reviews .review-box3 {
+    background-color: hsl(300, 43%, 22%);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.reviews .img-wrapper1,
+.reviews .img-wrapper2,
+.reviews .img-wrapper3 {
+    float: left;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.reviews .review-title1,
+.reviews .review-title2,
+.reviews .review-title3 {
+    margin-bottom: 30px;
+    padding-top: 10px
+}
+
+h4 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+h5 {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.reviews p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: auto;
+        min-height: 100vh;
+        margin: 30px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        width: 40%;
+        float: left;
+    }
+    .footer p {
+        padding-left: 0px;
+        margin-bottom: 10px;
+        text-align: left;
+        padding-bottom: 100px;
+    }
+    .footer .title {
+        padding: 0px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+    ul {
+        margin-top: 30px;
+        display: inline;
+    }
+    li {
+        margin-right: 10px;
+    }
+    .footer-rating {
+        overflow: hidden;
+    }
+    .rating {
+        width: 50%;
+        display: inline;
+    }
+    .rating-box1 {
+        top: 50px;
+        left: 80px;
+        position: relative;
+        display: inline;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+    .rating-box2 {
+        box-sizing: border-box;
+        top: 90px;
+        left: 110px;
+        position: relative;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .rating-box3 {
+        box-sizing: border-box;
+        position: relative;
+        top: 90px;
+        left: 160px;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .rating-box3 h3,
+    .rating-box2 h3,
+    .rating-box1 h3 {
+        display: inline-block;
+    }
+    .review-box1,
+    .review-box2,
+    .review-box3 {
+        width: 25%;
+        display: inline-block;
+    }
+    .review-box1 {
+        position: relative;
+        bottom: 80px;
+    }
+    .review-box2 {
+        position: relative;
+        bottom: 60px;
+    }
+    .review-box3 {
+        position: relative;
+        bottom: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        max-width: 1100px;
+        width: auto;
+    }
+}
